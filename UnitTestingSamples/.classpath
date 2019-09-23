@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="tst"/>
+	<classpathentry kind="lib" path="unit-testing-jars/byte-buddy-1.9.3.jar"/>
+	<classpathentry kind="lib" path="unit-testing-jars/cglib-nodep-3.2.9.jar"/>
+	<classpathentry kind="lib" path="unit-testing-jars/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="unit-testing-jars/javassist-3.24.0-GA.jar"/>
+	<classpathentry kind="lib" path="unit-testing-jars/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="unit-testing-jars/mockito-core-2.23.0.jar"/>
+	<classpathentry kind="lib" path="unit-testing-jars/objenesis-3.0.1.jar"/>
+	<classpathentry kind="lib" path="unit-testing-jars/powermock-mockito2-2.0.2-full.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

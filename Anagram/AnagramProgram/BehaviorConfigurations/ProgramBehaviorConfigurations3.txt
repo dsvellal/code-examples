@@ -1,0 +1,6 @@
+DetectionAlgorithm=DetectionBySorting
+PreProcessingSteps=WhiteSpaceRemover,PunctuationRemover
+Punctuations=;,!,:
+StepsToExecute=Validate,PreProcess,Detect
+ValidationSteps=Basic,Line,AlphabetCount
+Whitespaces=\n,\t, 
