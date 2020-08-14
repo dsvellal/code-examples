@@ -12,21 +12,18 @@ public class LevelOrderTraversal {
 	}
 
 	public String zigZagTraversal(Node root) {
-		// Early exit condition
+		StringJoiner output = new StringJoiner(" ");
 		if (root == null || (root.left == null && root.right == null)) {
 			return "Root is " + root.content + ". Can't traverse further";
 		}
 
-		StringJoiner output = new StringJoiner(" ");
 		currentLevel.add(root);
 		boolean leftToRight = true;
 		while (true) {
-			// Exit condition
 			if (currentLevel.isEmpty() && nextLevel.isEmpty()) {
 				break;
 			}
 
-			// Print
 			if (leftToRight) {
 				for (Node node : currentLevel) {
 					output.add(node.content);
@@ -37,7 +34,6 @@ public class LevelOrderTraversal {
 				}
 			}
 
-			// Level order read
 			for (Node node : currentLevel) {
 				if (node.left != null) {
 					nextLevel.add(node.left);
@@ -48,7 +44,6 @@ public class LevelOrderTraversal {
 				}
 			}
 
-			// Housekeeping
 			currentLevel.clear();
 			currentLevel = deepCopy(nextLevel);
 			nextLevel.clear();
@@ -61,18 +56,31 @@ public class LevelOrderTraversal {
 	private List<Node> deepCopy(List<Node> level) {
 		List<Node> copyLevel = new LinkedList<Node>();
 		for (Node node : level) {
-			copyLevel.add(copyNode(node.content, node.left, node.right, node.parent));
+			Node copyNode = new Node();
+			copyNode.content = node.content;
+			copyNode.left = node.left;
+			copyNode.right = node.right;
+			copyNode.parent = node.parent;
+			copyLevel.add(copyNode);
 		}
 		return copyLevel;
 	}
-	
-	private Node copyNode(String content, Node left, Node right, Node parent) {
-		Node node = new Node();
+
+	public static void main(String[] args) {
+		Node root = new Node();
+		Node l1RL = new Node();
+		setNode(l1RL, "2", null, null, root);
+		setNode(root, "1", l1RL, null, null);
+
+		LevelOrderTraversal traversal = new LevelOrderTraversal();
+		System.out.println(traversal.zigZagTraversal(root));
+	}
+
+	private static void setNode(Node node, String content, Node left, Node right, Node parent) {
 		node.content = content;
 		node.left = left;
 		node.right = right;
 		node.parent = parent;
-		return node;
 	}
 	
 	private class Node {
@@ -82,3 +90,4 @@ public class LevelOrderTraversal {
 		public Node parent;
 	}
 }
+
