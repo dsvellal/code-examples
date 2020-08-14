@@ -74,4 +74,11 @@ public class LevelOrderTraversal {
 		node.parent = parent;
 		return node;
 	}
+	
+	private class Node {
+		public String content;
+		public Node left;
+		public Node right;
+		public Node parent;
+	}
 }
