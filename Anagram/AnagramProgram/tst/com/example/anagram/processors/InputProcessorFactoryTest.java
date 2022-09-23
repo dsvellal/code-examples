@@ -1,16 +1,9 @@
-/*
- * Copyright of Philips, 2019
- *
- * This file is subject to the terms and conditions defined by Philips,
- * visit https://www.ip.philips.com/licensing/ for more details.
- *
- */
-package com.philips.anagram.processors;
+package com.example.anagram.processors;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.philips.anagram.constants.PreProcessingSteps;
+import com.example.anagram.constants.PreProcessingSteps;
 
 public class InputProcessorFactoryTest {
 
