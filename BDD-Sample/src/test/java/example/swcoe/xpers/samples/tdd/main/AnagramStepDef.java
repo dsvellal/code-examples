@@ -1,8 +1,4 @@
-/*
- * The copyright of this file belongs to Koninklijke Philips N.V., 2019.
- */
-
-package philips.swcoe.xpers.samples.tdd.main;
+package example.swcoe.xpers.samples.tdd.main;
 
 import org.junit.Assert;
 import cucumber.api.java.en.Then;
