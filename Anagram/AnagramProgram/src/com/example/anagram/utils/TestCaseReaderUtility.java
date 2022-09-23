@@ -1,10 +1,10 @@
-package com.philips.anagram.utils;
+package com.example.anagram.utils;
 
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-import com.philips.elasticsearch.metrics.client.Metrics;
+import com.example.elasticsearch.metrics.client.Metrics;
 
 public class TestCaseReaderUtility {
   private static final String defaultTestCasesDirectoryPath = "testInputs";
