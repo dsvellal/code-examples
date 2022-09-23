@@ -1,10 +1,10 @@
-package com.philips.anagram.validators;
+package com.example.anagram.validators;
 
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-import com.philips.elasticsearch.metrics.client.Metrics;
+import com.example.elasticsearch.metrics.client.Metrics;
 
 public class BasicInputValidator implements InputValidator {
   private Metrics metrics = null;
