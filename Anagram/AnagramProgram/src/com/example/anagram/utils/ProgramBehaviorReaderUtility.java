@@ -1,4 +1,4 @@
-package com.philips.anagram.utils;
+package com.example.anagram.utils;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -7,14 +7,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.philips.anagram.constants.ConstantsToDataTypeMapping;
-import com.philips.anagram.constants.PreProcessingSteps;
-import com.philips.anagram.constants.ProgramBehaviorKeys;
-import com.philips.anagram.constants.Punctuations;
-import com.philips.anagram.constants.StepsToExecute;
-import com.philips.anagram.constants.ValidationSteps;
-import com.philips.anagram.constants.Whitespaces;
-import com.philips.elasticsearch.metrics.client.Metrics;
+import com.example.anagram.constants.ConstantsToDataTypeMapping;
+import com.example.anagram.constants.PreProcessingSteps;
+import com.example.anagram.constants.Punctuations;
+import com.example.anagram.constants.StepsToExecute;
+import com.example.anagram.constants.ValidationSteps;
+import com.example.anagram.constants.Whitespaces;
+import com.example.elasticsearch.metrics.client.Metrics;
 
 public class ProgramBehaviorReaderUtility {
   private static final String defaultBehaviorConfigurationDirectory = "BehaviorConfigurations";
