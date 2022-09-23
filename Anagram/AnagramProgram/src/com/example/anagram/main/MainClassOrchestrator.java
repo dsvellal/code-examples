@@ -1,4 +1,4 @@
-package com.philips.anagram.main;
+package com.example.anagram.main;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -6,11 +6,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-import com.philips.anagram.constants.ProgramBehaviorKeys;
-import com.philips.anagram.constants.StepsToExecute;
-import com.philips.anagram.steps.Step;
-import com.philips.anagram.steps.StepFactory;
-import com.philips.elasticsearch.metrics.client.Metrics;
+import com.example.anagram.constants.ProgramBehaviorKeys;
+import com.example.anagram.constants.StepsToExecute;
+import com.example.anagram.steps.Step;
+import com.example.anagram.steps.StepFactory;
+import com.example.elasticsearch.metrics.client.Metrics;
 
 public class MainClassOrchestrator {
   private Metrics metrics = null;
