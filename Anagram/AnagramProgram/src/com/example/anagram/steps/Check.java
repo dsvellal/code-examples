@@ -1,22 +1,15 @@
-/*
- * Copyright of Philips, 2019
- *
- * This file is subject to the terms and conditions defined by Philips,
- * visit https://www.ip.philips.com/licensing/ for more details.
- *
- */
-package com.philips.anagram.steps;
+package com.example.anagram.steps;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import com.philips.anagram.constants.DetectionAlgorithm;
-import com.philips.anagram.constants.ProgramBehaviorKeys;
-import com.philips.anagram.strategy.Strategy;
-import com.philips.anagram.strategy.StrategyFactory;
-import com.philips.elasticsearch.metrics.client.Metrics;
+import com.example.anagram.constants.DetectionAlgorithm;
+import com.example.anagram.constants.ProgramBehaviorKeys;
+import com.example.anagram.strategy.Strategy;
+import com.example.anagram.strategy.StrategyFactory;
+import com.example.elasticsearch.metrics.client.Metrics;
 
 public class Check implements Step {
 
