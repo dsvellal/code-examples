@@ -1,7 +1,4 @@
-/*
- * The copyright of this file belongs to Koninklijke Philips N.V., 2019.
- */
-package philips.swcoe.xpers.samples.tdd.utility;
+package example.swcoe.xpers.samples.tdd.utility;
 
 import org.junit.Assert;
 import org.junit.Test;
