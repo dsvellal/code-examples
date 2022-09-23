@@ -1,13 +1,4 @@
-/*
- * Copyright of Philips, 2019
- *
- * This file is subject to the terms and conditions defined by Philips,
- * visit https://www.ip.philips.com/licensing/ for more details.
- *
- * @author: dsvellal@philips.com
- *
- */
-package com.philips.anagram.steps;
+package com.example.anagram.steps;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -18,10 +9,10 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.philips.anagram.constants.PreProcessingSteps;
-import com.philips.anagram.constants.ProgramBehaviorKeys;
-import com.philips.anagram.constants.Punctuations;
-import com.philips.anagram.constants.Whitespaces;
+import com.example.anagram.constants.PreProcessingSteps;
+import com.example.anagram.constants.ProgramBehaviorKeys;
+import com.example.anagram.constants.Punctuations;
+import com.example.anagram.constants.Whitespaces;
 
 public class ProcessTest {
   private Process process;
