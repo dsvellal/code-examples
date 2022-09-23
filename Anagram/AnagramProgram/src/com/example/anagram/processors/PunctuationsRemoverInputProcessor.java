@@ -1,19 +1,13 @@
-/*
- * Copyright of Philips, 2019
- *
- * This file is subject to the terms and conditions defined by Philips,
- * visit https://www.ip.philips.com/licensing/ for more details.
- *
- */
-package com.philips.anagram.processors;
+
+package com.example.anagram.processors;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import com.philips.anagram.constants.ProgramBehaviorKeys;
-import com.philips.anagram.constants.Punctuations;
-import com.philips.anagram.utils.StringUtility;
+import com.example.anagram.constants.ProgramBehaviorKeys;
+import com.example.anagram.constants.Punctuations;
+import com.example.anagram.utils.StringUtility;
 
 public class PunctuationsRemoverInputProcessor implements InputProcessor {
 
