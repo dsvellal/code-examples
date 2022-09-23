@@ -1,4 +1,4 @@
-package com.philips.anagram.steps;
+package com.example.anagram.steps;
 
 public class StepFactoryTest {
 
